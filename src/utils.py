@@ -2,6 +2,9 @@ import cv2
 import matplotlib.pyplot as plt
 
 
+IMAGE_SIZE = (360, 640, 3)
+
+
 def plot_image(image, figax = None, mode = "bgr"):
     if figax is None:
         fig = plt.figure(figsize = (8, 6))
