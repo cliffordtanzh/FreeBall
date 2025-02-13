@@ -1,5 +1,9 @@
-data/** 
-yolov5
+# All data stuff
+**/data
 
+# yolov5 stuff
+**/datasets
+ball_detection/yolov5
+ball_detection/yolovball
 
 misc/yt-dlp.exe
