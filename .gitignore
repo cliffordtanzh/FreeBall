@@ -1,9 +1,20 @@
-# All data stuff
-**/data
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
 
-# yolov5 stuff
-**/datasets
-ball_detection/yolov5
-ball_detection/yolovball
+# Data (keep structure, ignore content)
+data/raw/
+data/processed/
 
-misc/yt-dlp.exe
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store

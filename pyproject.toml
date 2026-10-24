@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "freeball"
+version = "0.1.0"
+description = "Volleyball clipping and analysis tool with rally/player/action detection"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.100",
+    "uvicorn>=0.23",
+    "opencv-python>=4.8",
+    "torch>=2.0",
+    "numpy>=1.24",
+    "scipy>=1.11",
+    "yt-dlp>=2023",
+    "pydantic>=2.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "black>=23.0",
+    "ruff>=0.1",
+    "ipython>=8.0",
+]
+
+[tool.setuptools]
+packages = ["backend"]
